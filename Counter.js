@@ -32,6 +32,3 @@ console.log(b())
 console.log(b())
 console.log(b())
 
-// Logic 
-// if we didint use the second variable the the if condition will never terminate and we'll get firstly called value,the only purpose of secondCalled value is terminate the if statement 
-// just do post increment 😒
