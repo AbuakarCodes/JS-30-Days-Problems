@@ -7,7 +7,7 @@ var cancellable = function (fn, args, t) {
     clearInterval(id);
   };
 };
-
+// Ttesting
 const result = [];
 
 const fn = (x) => x * 2;
