@@ -1,15 +1,19 @@
 var strStr = function (haystack, needle) {
-    let String1 = haystack.split("")
-    let String2 = needle.split("")
-    let arry = []
+    let Haystack = haystack.split("")
+    let Needle = needle.split("")
+    let Checkarry = []
 
-    for (let idx = 0; idx <= needle.length; idx++) {
-        if (String2[idx] == String1[idx]) arry.push(true)
+    for (let i = 0; i < Haystack.length; i++) {
+        if(Needle[0]==Haystack[i]){
+            for (let j = 0; j < Needle.length; j++) {
+               if(Needle[j]==Haystack[j]) Checkarry.push(1)
+                else Checkarry.push(0)
+            }
+        }
     }
-    let Check = arry.every(e => true)
-    console.log(arry)
-    // if (Check) return 0
-    // else -1
+    if (Checkarry.every(elem => elem ==1)) return 0
+    else return -1
+
 };
 
-console.log(strStr("butsad", "sad"))
+console.log(strStr("sasdge", "sad"))

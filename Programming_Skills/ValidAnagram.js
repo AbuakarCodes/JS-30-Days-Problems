@@ -7,4 +7,4 @@ var isAnagram = function (s, t) {
     return String1 === String2
 };
 
-console.log(isAnagram("rac", "car"))
+console.log(isAnagram("raca                                                                    ", "car"))
